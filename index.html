@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+  
+<!-- <button onclick="location='https://www.w3schools.com/css/css_rwd_mediaqueries.asp'">click</button> -->
+<header>
+  <a href="./IMAGE/AK-resume2.pdf" 
+  >Download Resume</a>
+  <a href="https://www.linkedin.com/in/akash-kumar3795" target="_blank">
+    <img src="./IMAGE/social-logos/linkedin-logo.png" alt="" width='100%'>
+  </a>
+
+  <a href="https://github.com/guthealer" target="_blank">
+    <img src="./IMAGE/social-logos/github-logo.png" alt="" width="100%">
+  </a>
+ 
+</header>
+  <div class="intro container">
+    <div class="intro-text">
+      <h1>Hello,</h1>
+      <h1>I am Akash Kumar.</h1>
+      <h2>I am a web developer.</h2>
+    </div>
+    <div class="my-pic">
+      <img src="./IMAGE/profile photo.png" alt="" width=100%>
+    </div>
+  </div>
+
+<div class="about container">
+  <div class="about-me">
+   <h1> About me</h1>
+   <p>
+I am an allround web developer. I am a senior programmer with good knowledge of front-end techniques. Vitae sapien pellentesque habitant morbi tristique senectus et. Aenean sed adipiscing diam donec adipiscing tristique risus.
+</p> 
+  </div>
+  <div class="detailes">
+    <h1>Details</h1>
+    <h2>Name:</h2>
+    <h3>Akash kumar</h3>
+
+    <h2>E-Mail:</h2>
+    <h3>akashkumar3795@gmail.com</h3>
+
+  </div>
+</div>
+
+<div class="container">
+  <div>
+  <h1>Skills And Knowledge</h1>
+<div class="skills">
+
+
+   <div class="skill-card">
+         <h2>html</h2>  
+        
+   </div>
+
+   <div class="skill-card">
+         <h2>css</h2>
+   </div>
+
+   <div class="skill-card">
+          <h2>javascript</h2>
+   </div>
+
+   <div class="skill-card">
+          <h2>React-js</h2>
+   </div>
+
+</div>
+</div>
+</div>
+<div class="container">
+  <div>
+  <h1>Projects</h1>
+<div class="pro-container">
+   <div class="pro-card">
+    <a href="">
+      <img src="./IMAGE/PROJECTS/varu.png" alt="" width=100%>
+      <h3>html/css/js</h3>
+    </a>
+   </div>
+   <div class="pro-card">
+
+    <a href="">
+    <img src="./IMAGE/PROJECTS/e-com.png" alt="" width=100%>
+    <h3>html/css/js</h3>
+  </a>
+   </div>
+   <div class="pro-card">
+    <a href="">
+    <img src="./IMAGE/PROJECTS/res.png" alt="" width=100%>
+    <h3>html/css/js</h3>
+  </a>
+   </div>
+
+   <div class="pro-card">
+    <a href="">
+    <img src="./IMAGE/PROJECTS/stopwatch.png" alt="" width=100%>
+    <h3>html/css/js</h3>
+  </a>
+   </div>
+</div>
+</div>
+</div>
+<div class="container">
+<div class="service-container" >
+  <h1>Services</h1>
+
+<div class="services">
+  <div class="service-card">
+         <h2>React-js web page</h2>
+         <p>Creating single page web app in react js from figma/psd</p>
+  </div>
+
+  <div class="service-card">
+  <h2>psd to html</h2>
+  <p>Creating responsive websites from psd </p>
+  </div>
+
+  <div class="service-card">
+    <h2>figma to html</h2>
+    <p>Creating responsive websites from figma </p>
+  </div>
+
+  <div class="service-card">
+        <h2>psd/figma to html in Bootstrap-5</h2>
+        <p>Creating html and React-js page using Bootstrap-5</p>
+  </div>
+</div>
+</div>
+</div>
+
+
+<div class="container">
+
+<div class="contact">
+ 
+
+  <label for=""><h1>Contact</h1></label>
+  <form action="" onsubmit="formsubmit()" name="myform">
+   
+    <div>
+    <label for="email">Email</label>
+       <input type="email" name="email" id="email">
+      </div>
+
+       <div>
+       <label for="">Message</label>
+       <textarea name="msg" id="" cols="30" rows="10"></textarea>
+      </div>
+      <div>
+      <input type="submit" value="Submit" onclick="formhandle()">
+    
+    </div>
+  </form>
+</div>
+</div>
+<h1 id="h1">
+</h1>
+<script>
+  const form = document.querySelector('form');
+  const  email = document.querySelector('.email');
+form.addEventListener('submit', event => {
+  // submit event detected 
+ 
+  //event.preventDefault();
+
+})
+
+function formsubmit(){
+  let e_input= document.myform.email.value;
+  let m_input=document.myform.msg.value;
+  if(e_input=='' || m_input==''){
+    event.preventDefault();
+  return false;
+  }
+}
+</script>
+</body>
+</html>
