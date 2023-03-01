@@ -21,11 +21,11 @@ a h3{color: greenyellow;}
 
 
 
-h1{font-size:20px;
+h1{font-size:2rem;
     font-weight: 400;
     }
-h2{font-size:16px; font-weight: 300;}
-h3{font-size: 16px;font-weight:200;}
+h2{font-size:1.8rem; font-weight: 300;}
+h3{font-size: 1.5rem;font-weight:200;}
 p{font-size: 1.4rem;
 line-height: 1.7;}
 
@@ -99,6 +99,13 @@ background-color:;
     place-items: center;
   gap: 5px;
     height: 100vh;
+}
+
+.intro h1{
+    font-size: 2.5rem;
+}
+.intro h2{
+    font-size: 1.5rem;
 }
 .intro-text{
   
@@ -257,13 +264,7 @@ justify-content: center;
 
 
 @media screen and (max-width:700px) {
-    h1{font-size:20px;
-        
-    }
-h2{font-size:16px;
- }
-h3{font-size: 12px;}
-p{font-size: 14px;}
+   
     .container{margin:3px;
     height: fit-content;}
     .intro{
