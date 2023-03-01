@@ -14,6 +14,7 @@ background-position: top;
 .aligncenter{
     text-align: center;
     text-decoration: underline;
+    margin: 1rem;
 }
 
 a{text-decoration: none;
@@ -180,7 +181,7 @@ max-width: 300px;}
               place-items:center ;
                 }
 
-.pro-card{background-image: linear-gradient(rgba(55, 71, 63,0.3),rgba(28, 113, 101,0.2));
+.pro-card{background-image: linear-gradient(rgba(179, 229, 203, 0.3),rgba(48, 60, 58, 0.2));
     border-radius: 2rem;
     padding: 1rem;
 
@@ -219,10 +220,11 @@ overflow: hidden;
 .service-card{ 
 padding: 0.5em;
 border-radius: 1em;
+padding: 1rem;
 max-width: 400px;
+border: 2px solid rgb(161, 241, 214);
 
-
-background-image: linear-gradient(rgba(55, 71, 63,0.3),rgba(28, 113, 101,0.2));
+background-image: linear-gradient(rgba(102, 128, 115, 0.3),rgba(28, 113, 101,0.4));
 
 }
 
