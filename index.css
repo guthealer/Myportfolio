@@ -1,22 +1,82 @@
 *{box-sizing: border-box;
 font-family:'verdana';
-background-color:whitesmokegit}
-h1{font-size:26px;
+background-color:whitesmokegit;
+
+}
+body{background: url('./IMAGE/Wave.svg') no-repeat fixed;background-color: rgb(6, 6, 6);
+    background-blend-mode:color-dodge;
+    
+    background-size:cover;
+    color: rgb(188, 246, 188);
+background-position: top;
+}
+
+
+a{text-decoration: none;
+}
+a h3{color: greenyellow;}
+
+
+
+
+
+
+h1{font-size:20px;
     font-weight: 400;
     }
-h2{font-size:20px; font-weight: 300;}
+h2{font-size:16px; font-weight: 300;}
 h3{font-size: 16px;font-weight:200;}
+p{font-size: 1.4rem;
+line-height: 1.7;}
+
+
+
+
+
+
+
+
 
 
 header a{text-decoration: none;
 margin: 2px;
 display: block;
-margin:2px 2px 2px 2px;
+color:black;
+font-weight: bolder;
+background-color: rgb(161, 241, 214);
+
+margin:2px;
+padding: 4px;
+border-radius: 10px;
+width: 5rem;
+
 }
 header{display: flex;
     flex-wrap: wrap;
+
+    justify-content: center;
 align-items: center;}
-header img{max-width: 5rem;}
+header img{
+   aspect-ratio:4/1;
+    object-fit:cover;
+    width: 100%;
+
+    border-radius:10px;
+    background-blend-mode: color-burn;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 .container{
     margin-left: 50px;
     margin-right: 50px;
@@ -26,15 +86,39 @@ height: 100vh;
 background-color:;
 }
 
-.intro{
 
+
+
+
+
+.intro{
+    
+  
     display: grid;
     grid-template-columns: repeat(2,1fr);
     place-items: center;
   gap: 5px;
     height: 100vh;
 }
-.my-pic img{border-radius:20%;}
+.intro-text{
+  
+     
+     padding:1rem;margin: 1rem;
+     border-radius: 2rem;
+}
+.my-pic img{border-radius:20%;
+
+max-width: 300px;}
+
+
+
+
+
+
+
+
+
+
 
 .about{
 
@@ -44,37 +128,93 @@ background-color:;
    height: 100vh;
 }
 
+
+
+
+
+
+
+
+
+
 .skills{
     display:grid;
     grid-template-columns: repeat(4,1fr);
     place-items:center ;
    
 }
+.skill-card{text-align: center;
+    max-width: 200px;
+    margin: 1rem;
+
+}
+.skill-card svg{
+   
+}
+
+
+
+
+
+
+
+
 
 .pro-container{display: grid;
                     grid-template-columns: repeat(2,minmax(100px,1fr));
-                    gap: 1rem;
+                    gap: 2rem;
               grid-template-rows: repeat(2,minmax(100px,1fr));
               place-items:center ;
                 }
 
-.pro-card{box-shadow: 0px 0px 8px 3px rgba(140, 134, 134, 0.6);
+.pro-card{box-shadow: 0px 0px 8px 3px rgba(237, 235, 235, 0.6);
+    border-radius: 2rem;
+    padding: 1rem;
+
 text-align: center;
 height: fit-content;
 max-width: 400px;
+background-image: linear-gradient(rgb(9, 75, 9),black);
+
+overflow: hidden;
 }  
-.pro-card:hover{box-shadow: 0 0 3px 3px burlywood;}
-.pro-card a{text-decoration: none;}
+.pro-card img{
+    border-radius: 1rem;
+}
+.pro-card:hover{box-shadow: 0 0 3px 3px rgb(161, 241, 214);}
+.pro-card a{text-decoration: none;    color: white;}
+
+
+
+
+
+
+
+
+
 .service-container{
 
 }
 .services{display:grid;
      grid-template-columns: repeat(2, minmax(200px,1fr));
-    gap: 1rem;}
+    gap: 1rem;
+  
+   
+}
 
-.service-card{box-shadow: 0px 0px 8px 4px rgba(140, 134, 134, 0.6);
+.service-card{border:2px rgb(161, 241, 214) solid;
 padding: 0.5em;
-border-radius: 1em;}
+border-radius: 1em;
+background-image: linear-gradient(rgb(4, 131, 80),black);
+}
+.service-card h2{font-size: 1.8rem;}
+
+
+
+
+
+
+
 
 .contact{display:grid;
     grid-template-columns:auto;
@@ -84,18 +224,21 @@ border-radius: 1em;}
 
 }
 
-.contact form {box-shadow:0 0 5px 3px rgba(74, 90, 123, 0.6);
+.contact form {border: 2px solid rgb(161, 241, 214);
     
     border-radius: 1em;
 padding: 1rem;
 width: 100%;
 max-width: 600px;}
-.contact input,textarea{padding: 4px;font-size: 15px;
-    border: 2px black solid;
+.contact input,textarea{padding: 4px;font-size: 
+15px;
+color: white;
+background-color:transparent;
+    border: 2px rgb(161, 241, 214) solid;
     border-radius: 10px;
 width: 100%;}
 input[type='submit']{width: 100px;
-    background-color: rgb(195, 214, 232);
+    background:transparent;
 border-radius: 10px;
 }
 .contact div{display: flex;
@@ -105,6 +248,12 @@ justify-content: center;
  margin: 1em;}
 
 .resume img{border:2px black solid;}
+
+
+
+
+
+
 
 
 @media screen and (max-width:700px) {
@@ -121,6 +270,8 @@ p{font-size: 14px;}
         grid-template-columns: repeat(1,1fr);
     }
     .my-pic img{max-width: 360px;}
+
+
 
     .about{
 
