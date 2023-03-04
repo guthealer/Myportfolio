@@ -13,13 +13,14 @@ background-position: top;
 
 .aligncenter{
     text-align: center;
-    text-decoration: underline;
+
     margin: 1rem;
 }
 
 a{text-decoration: none;
 }
-a h3{color: greenyellow;}
+
+
 
 
 
@@ -28,10 +29,15 @@ a h3{color: greenyellow;}
 
 h1{font-size:2rem;
     font-weight: 400;
-    text-decoration: underline;
+
+width: 100%;
+font-weight: 600;
+  text-align: center;
+  color: rgb(24, 207, 137);
 
     }
-h2{font-size:1.8rem; font-weight: 300;}
+h2{font-size:1.8rem; font-weight: 300;
+}
 h3{font-size: 1.5rem;font-weight:200;}
 p{font-size: 1.4rem;
 line-height: 1.7;}
@@ -48,9 +54,10 @@ line-height: 1.7;}
 header a{text-decoration: none;
 margin: 2px;
 display: block;
-color:black;
+color:rgb(30, 29, 29);
 font-weight: bolder;
-background-color: rgb(161, 241, 214);
+background-color:rgb(239, 122, 122);
+
 
 margin:2px;
 padding: 4px;
@@ -60,16 +67,23 @@ width: 5rem;
 }
 header{display: flex;
     flex-wrap: wrap;
-
+    height: 50px;
     justify-content: center;
-align-items: center;}
-header img{
-   aspect-ratio:4/1;
+align-items:;
+}
+header a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    height: 40px;
+  
+    
     object-fit:cover;
-    width: 100%;
+   
 
     border-radius:10px;
-    background-blend-mode: color-burn;
+ 
 }
 
 
@@ -87,10 +101,12 @@ header img{
 .container{
     margin-left: 50px;
     margin-right: 50px;
- display: grid;
- grid-template-columns: 1fr;
-height: 100vh;
-background-color:;
+ display:grid;
+place-items: center;
+min-height: 100vh;
+
+
+
 }
 
 
@@ -105,25 +121,35 @@ background-color:;
     display: grid;
     grid-template-columns: repeat(2,1fr);
     place-items: center;
-  gap: 5px;
+  column-gap:1rem;
     height: 100vh;
 }
 
-.intro h1{background-color: rgb(36, 219, 134);
+.intro h1{
+   
 width:fit-content;
       font-family:Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 2.5rem;
+    font-size: 2.3rem;
+   
      text-decoration: none;
     padding: 1rem;
+    /* text-shadow: 2px 3px 3px  rgb(215, 68, 42); */
+    /* white-space: nowrap; */
+    text-shadow: 2px 3px 3px  rgb(194, 4, 61);
+color: rgb(154, 229, 154);
+font-weight: 700;
 
-color: black;
-font-weight: 800;
 
 }
+
+
+    
+
 .intro h2{
     background-color: rgb(148, 37, 56);
     width: fit-content;
     padding: 0.4rem;
+    text-align: center;
 
 }
 .intro-text{
@@ -131,9 +157,9 @@ font-weight: 800;
      padding:1rem;margin: 1rem;
      border-radius: 2rem;
 }
-.my-pic img{border-radius:20%;
-
-max-width: 300px;}
+.my-pic img{ border-radius: 3rem;
+border: 2px solid lightgreen;
+max-width: 250px;}
 
 
 
@@ -164,20 +190,41 @@ max-width: 300px;}
 
 .skills{
     display:grid;
-    grid-template-columns: repeat(4,1fr);
+    grid-template-columns: repeat(3,1fr);
     place-items:center ;
-   
+    width: 100%;
+  
+
+ 
 }
 .skill-card{text-align: center;
     max-width: 200px;
-    margin: 1rem;
-
+    margin:0;
+  
 }
-.skill-card svg{
+.skill-card h2{
+   
+    margin: 0;
    
 }
+.skill-card svg{
+   fill:rgb(188, 246, 188);
+   
+   animation: card_animate 1s infinite alternate-reverse;
+   position: relative;
 
+}
 
+@keyframes card_animate {
+    0%{  top: 0px;
+        /* transform: rotate(20deg); */
+    }
+
+    100%{top:20px;
+        /* transform:rotate(-20deg); */
+    }
+    
+}
 
 
 
@@ -187,28 +234,51 @@ max-width: 300px;}
 
 .pro-container{display: grid;
                     grid-template-columns: repeat(2,minmax(100px,1fr));
-                    gap: 2rem;
-              grid-template-rows: repeat(2,minmax(100px,1fr));
+                
+                    gap: 1rem;
+         
               place-items:center ;
                 }
 
-.pro-card{background-image: linear-gradient(rgba(179, 229, 203, 0.3),rgba(140, 228, 215, 0.2));
+.pro-card{
     border-radius: 2rem;
-    padding: 1rem;
+    padding: 0rem;
+    margin: 1rem;
+    border: 3px solid rgb(36, 219, 134);
 
 text-align: center;
 height: fit-content;
 max-width: 400px;
 
 
+
 overflow: hidden;
 }  
-.pro-card img{
-    border-radius: 1rem;
-}
-.pro-card:hover{box-shadow: 0 0 3px 3px rgb(161, 241, 214);}
-.pro-card a{text-decoration: none;    color: white;}
 
+
+
+
+
+.pro-card img{
+  
+   width: 100%;
+   height:100%;
+   object-fit: contain;
+  
+
+  
+}
+.pro-card:hover{
+background-color:rgb(105, 12, 12);
+border: 2px solid rgb(105, 12, 12);
+
+}
+
+.pro-card a{text-decoration: none; }
+
+.pro-card h3{
+    color:lightgreen;
+}
 
 
 
@@ -232,10 +302,11 @@ overflow: hidden;
 padding: 0.5em;
 border-radius: 1em;
 padding: 1rem;
-max-width: 400px;
+width:100%;
+min-height:250px;
 border: 2px solid rgb(161, 241, 214);
 
-background-image: linear-gradient(rgba(102, 128, 115, 0.3),rgba(28, 113, 101,0.4));
+
 
 }
 
@@ -292,7 +363,7 @@ justify-content: center;
 
 
 
-@media screen and (max-width:700px) {
+@media screen and (max-width:768px) {
    
     .container{margin:3px;
     height: fit-content}
@@ -318,15 +389,25 @@ justify-content: center;
     .skills{
         display:grid;
         grid-template-columns: repeat(2,1fr);
-        place-items:normal ;
+        place-items:center ;
         }
-
+        .skill-card{
+            max-width: 100px;
+        }
+.skill-card h2{
+    margin: 0;
+  
+}
         .pro-container{display: grid;
             grid-template-columns: repeat(1,minmax(100px,1fr));
             gap: 2rem;
     
       place-items:center ;
         }  
+
+        .pro-card{
+            max-width: 90%;
+        }
 
   .services{display:grid;
             grid-template-columns: repeat(1, minmax(200px,1fr));
